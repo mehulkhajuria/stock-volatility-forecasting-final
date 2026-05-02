@@ -1,0 +1,47 @@
+# Ignore everything in this home-directory repository by default.
+/*
+
+# Keep the final project files.
+!/.gitignore
+!/README.md
+!/requirements.txt
+!/requirements-lock.txt
+!/environment.yml
+!/LICENSE
+!/video_script.md
+!/demo_checklist.md
+!/data/
+!/data/README.md
+!/data/raw/
+!/data/raw/.gitkeep
+!/data/processed/
+!/data/processed/.gitkeep
+!/figures/
+!/results/
+!/src/
+!/paper/
+
+# Generated/cache files to leave out.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+*.log
+*.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.out
+*.synctex.gz
+*.toc
+*.zip
+paper/_template_download/
+paper/neurips_2024_template_attempt.zip
+data/raw/*.csv
+data/processed/*.csv
+data/processed/*.parquet
+models/
