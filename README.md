@@ -7,7 +7,7 @@ Department of Computer Science, Rutgers University--New Brunswick
 
 This project forecasts short-term SPY realized volatility using public Yahoo Finance daily OHLCV data and a reproducible machine learning pipeline. The raw data are public; the original project contribution is the leakage-safe target construction, feature engineering, model comparison, generated figures, evaluation metrics, and final analysis.
 
-Code: `https://github.com/<your-github-username>/stock-volatility-forecasting-final`  
+Code: `https://github.com/mehulkhajuria/stock-volatility-forecasting-final`  
 Video: `TODO_PUBLIC_VIDEO_URL`  
 Final paper: [paper/final_project.pdf](paper/final_project.pdf)
 
@@ -118,7 +118,7 @@ This is not financial advice. The project uses daily public market data only and
 
 ## Before Submission
 
-Replace `<your-github-username>` in:
+Replace `mehulkhajuria` in:
 
 - `README.md`
 - `paper/main.tex`
