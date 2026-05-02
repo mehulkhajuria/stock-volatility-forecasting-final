@@ -1,0 +1,7 @@
+model,directional_accuracy
+Naive Persistence,
+Rolling Mean,0.689156626506024
+"GARCH(1,1)",0.553012048192771
+Random Forest,0.6518072289156627
+Gradient Boosting,0.6686746987951807
+MLP neural fallback,0.5951807228915663

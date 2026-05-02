@@ -1,0 +1,95 @@
+{
+  "generated_at": "2026-05-02T05:51:34",
+  "target_symbol": "SPY",
+  "rows": 3061,
+  "train_rows": 1980,
+  "validation_rows": 251,
+  "test_rows": 830,
+  "test_start": "2023-01-03",
+  "test_end": "2026-04-24",
+  "best_model_by_rmse": "Gradient Boosting",
+  "metrics": [
+    {
+      "model": "Gradient Boosting",
+      "MSE": 0.007039607800118389,
+      "MAE": 0.058306793477363915,
+      "RMSE": 0.0839023706465937,
+      "runtime_seconds": 0.7316669000001639,
+      "notes": "XGBoost XGBRegressor."
+    },
+    {
+      "model": "Random Forest",
+      "MSE": 0.007663373768930983,
+      "MAE": 0.05873414272861637,
+      "RMSE": 0.08754069778640666,
+      "runtime_seconds": 24.190839799999594,
+      "notes": "RandomForestRegressor with fixed seed."
+    },
+    {
+      "model": "Rolling Mean",
+      "MSE": 0.008078988201810319,
+      "MAE": 0.052468558071147024,
+      "RMSE": 0.08988319198721371,
+      "runtime_seconds": 0.00067380000018602,
+      "notes": "Mean of previous 20 volatility lags."
+    },
+    {
+      "model": "Naive Persistence",
+      "MSE": 0.008847903394085279,
+      "MAE": 0.05822851621461358,
+      "RMSE": 0.09406329461636605,
+      "runtime_seconds": 0.00010910000037256395,
+      "notes": "Uses current 5-day realized volatility."
+    },
+    {
+      "model": "GARCH(1,1)",
+      "MSE": 0.014492139978340132,
+      "MAE": 0.09992481040113042,
+      "RMSE": 0.12038330440032012,
+      "runtime_seconds": 0.05032480000045325,
+      "notes": "arch GARCH(1,1), fit once on train+validation returns."
+    },
+    {
+      "model": "MLP neural fallback",
+      "MSE": 0.016529350166764694,
+      "MAE": 0.09305790530274112,
+      "RMSE": 0.12856652039611516,
+      "runtime_seconds": 0.48585610000009183,
+      "notes": "TensorFlow and PyTorch LSTM stacks unavailable or unreliable; reported deterministic MLP neural fallback. TF error: No module named 'tensorflow'; Torch error: No module named 'torch'"
+    }
+  ],
+  "directional_accuracy": [
+    {
+      "model": "Naive Persistence",
+      "directional_accuracy": null
+    },
+    {
+      "model": "Rolling Mean",
+      "directional_accuracy": 0.689156626506024
+    },
+    {
+      "model": "GARCH(1,1)",
+      "directional_accuracy": 0.553012048192771
+    },
+    {
+      "model": "Random Forest",
+      "directional_accuracy": 0.6518072289156627
+    },
+    {
+      "model": "Gradient Boosting",
+      "directional_accuracy": 0.6686746987951807
+    },
+    {
+      "model": "MLP neural fallback",
+      "directional_accuracy": 0.5951807228915663
+    }
+  ],
+  "model_notes": {
+    "Naive Persistence": "Uses current 5-day realized volatility.",
+    "Rolling Mean": "Mean of previous 20 volatility lags.",
+    "GARCH(1,1)": "arch GARCH(1,1), fit once on train+validation returns.",
+    "Random Forest": "RandomForestRegressor with fixed seed.",
+    "Gradient Boosting": "XGBoost XGBRegressor.",
+    "MLP neural fallback": "TensorFlow and PyTorch LSTM stacks unavailable or unreliable; reported deterministic MLP neural fallback. TF error: No module named 'tensorflow'; Torch error: No module named 'torch'"
+  }
+}

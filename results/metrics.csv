@@ -1,0 +1,7 @@
+model,MSE,MAE,RMSE,runtime_seconds,notes
+Gradient Boosting,0.007039607800118389,0.058306793477363915,0.0839023706465937,0.7316669000001639,XGBoost XGBRegressor.
+Random Forest,0.007663373768930983,0.05873414272861637,0.08754069778640666,24.190839799999594,RandomForestRegressor with fixed seed.
+Rolling Mean,0.008078988201810319,0.052468558071147024,0.08988319198721371,0.00067380000018602,Mean of previous 20 volatility lags.
+Naive Persistence,0.008847903394085279,0.05822851621461358,0.09406329461636605,0.00010910000037256395,Uses current 5-day realized volatility.
+"GARCH(1,1)",0.014492139978340132,0.09992481040113042,0.12038330440032012,0.05032480000045325,"arch GARCH(1,1), fit once on train+validation returns."
+MLP neural fallback,0.016529350166764694,0.09305790530274112,0.12856652039611516,0.48585610000009183,TensorFlow and PyTorch LSTM stacks unavailable or unreliable; reported deterministic MLP neural fallback. TF error: No module named 'tensorflow'; Torch error: No module named 'torch'
