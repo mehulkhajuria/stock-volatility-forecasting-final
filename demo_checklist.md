@@ -2,8 +2,8 @@
 
 Before recording:
 
-- Replace `<your-github-username>` after the repo is public.
-- Replace `TODO_PUBLIC_VIDEO_URL` after uploading the presentation.
+- GitHub repo is public: https://github.com/mehulkhajuria/stock-volatility-forecasting-final
+- Replace `https://drive.google.com/file/d/1WHrb_cmfUd0r3vPYM631zReFNjM5q4A_/view?usp=sharing` after uploading the presentation.
 - Recompile `paper/final_project.pdf` after URL changes.
 - Confirm `python -m src.run_all` completes.
 - Confirm `results/metrics.csv` exists.
@@ -27,5 +27,5 @@ After recording:
 
 - Upload the video.
 - Make the video link public or instructor-accessible.
-- Replace `TODO_PUBLIC_VIDEO_URL` in `README.md` and `paper/main.tex`.
+- Replace `https://drive.google.com/file/d/1WHrb_cmfUd0r3vPYM631zReFNjM5q4A_/view?usp=sharing` in `README.md` and `paper/main.tex`.
 - Recompile the paper.
