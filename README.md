@@ -103,8 +103,6 @@ This downloads/caches raw data in `data/raw/`, writes processed features in `dat
 ├── requirements-lock.txt
 ├── environment.yml
 ├── LICENSE
-├── video_script.md
-├── demo_checklist.md
 ├── data/
 ├── figures/
 ├── results/
@@ -115,5 +113,7 @@ This downloads/caches raw data in `data/raw/`, writes processed features in `dat
 ## Limitations
 
 This is not financial advice. The project uses daily public market data only and does not include intraday prices, options-implied volatility, news, macroeconomic events, or transaction-cost analysis. GARCH is fit once rather than refit in a walk-forward loop. A true LSTM result is not reported because TensorFlow and PyTorch were not available in the local Python 3.13 environment.
+
+
 
 
