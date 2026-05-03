@@ -116,22 +116,4 @@ This downloads/caches raw data in `data/raw/`, writes processed features in `dat
 
 This is not financial advice. The project uses daily public market data only and does not include intraday prices, options-implied volatility, news, macroeconomic events, or transaction-cost analysis. GARCH is fit once rather than refit in a walk-forward loop. A true LSTM result is not reported because TensorFlow and PyTorch were not available in the local Python 3.13 environment.
 
-## Before Submission
 
-Replace `mehulkhajuria` in:
-
-- `README.md`
-- `paper/main.tex`
-
-Replace `https://drive.google.com/file/d/1WHrb_cmfUd0r3vPYM631zReFNjM5q4A_/view?usp=sharing` in:
-
-- `README.md`
-- `paper/main.tex`
-
-After replacing either paper URL, recompile:
-
-```powershell
-cd paper
-latexmk -pdf main.tex
-Copy-Item main.pdf final_project.pdf -Force
-```
